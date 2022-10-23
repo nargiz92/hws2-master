@@ -1,36 +1,115 @@
 .button {
+    margin-top: 1465px;
 }
 
 .disabled {
+    height: 30px;
+    width: 133px;
+    left: 574px;
+    top: 1573px;
+    border-radius: 3px;
+    padding: 5px 24px 5px 24px;
+
 }
 
 .secondary {
+    position: absolute;
+    width: 176px;
+    height: 30px;
+    left: 574px;
+    top: 1622px;
+
+    border: 1px solid #0066CC;
+    border-radius: 3px;
 }
 
 .default {
+    width: 132px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #0066CC;
+    padding: 5px 24px 5px 24px;
 }
 
 .red {
+    width: 129px;
+    height: 30px;
+    top: 1519px;
+    left: 576px;
+    border-radius: 3px;
+    padding: 5px 24px 5px 24px
 }
 
 .default:hover {
+    position: absolute;
+    width: 167px;
+    height: 30px;
+    left: 574px;
+    top: 1465px;
+
+    background: #0080FF;
+    border-radius: 3px;
 }
 
 .red:hover {
+    position: absolute;
+    width: 167px;
+    height: 30px;
+    left: 574px;
+    top: 1519px;
+
+    background: #FF1A47;
+    border-radius: 3px;
 }
 
 .secondary:hover {
+
 }
 
 
 .default:active {
+    position: absolute;
+    width: 149px;
+    height: 30px;
+    left: 574px;
+    top: 1465px;
+
+    background: #0059B3;
+    border-radius: 3px;
 }
 
 .secondary:active {
+    position: absolute;
+    width: 149px;
+    height: 30px;
+    left: 574px;
+    top: 1622px;
+
+    background: #C9E5FF;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
+
 }
 
 .red:active {
+    position: absolute;
+    width: 149px;
+    height: 30px;
+    left: 574px;
+    top: 1519px;
+
+    background: #B31232;
+    border-radius: 3px;
 }
 
 .button:disabled {
+    position: absolute;
+    width: 133px;
+    height: 30px;
+    left: 574px;
+    top: 1573px;
+
+    background: #004D99;
+    opacity: 0.5;
+    border-radius: 3px
 }
