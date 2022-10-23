@@ -21,12 +21,11 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
 }
 
 export const pureOnBlur = (name: string, setError: (error: string) => void) => {
-    if (name === '') {
-        setError('Ошибка! Введите имя!')
-    } else if (name === '    ') {
-        setError('Ошибка! Введите имя!')
-    }
-    // если имя пустое - показать ошибку
+   if (name.trim()===''){
+       setError('Ошибка! Введите имя!')
+       return
+   }
+
 }
 
 export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void) => {
