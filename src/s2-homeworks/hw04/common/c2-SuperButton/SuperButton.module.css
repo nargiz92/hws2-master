@@ -1,29 +1,19 @@
-.button {
-
-}
-
 .disabled {
-    position: absolute;
     height: 30px;
     width: 133px;
-    left: 574px;
-    top: 1573px;
+    background: #004D99;
     border-radius: 3px;
     padding: 5px 24px 5px 24px;
-
 }
 
 .secondary {
-    position: absolute;
     width: 176px;
     height: 30px;
-    left: 574px;
     border: 1px solid #0066CC;
     border-radius: 3px;
 }
 
 .default {
-    position: absolute;
     width: 132px;
     height: 30px;
     border-radius: 3px;
@@ -32,16 +22,13 @@
 }
 
 .red {
-    position: absolute;
     width: 129px;
     height: 30px;
-    left: 576px;
     border-radius: 3px;
     padding: 5px 24px 5px 24px
 }
 
 .default:hover {
-
     width: 167px;
     height: 30px;
     left: 574px;
@@ -50,7 +37,6 @@
 }
 
 .red:hover {
-
     width: 167px;
     height: 30px;
     left: 574px;
@@ -59,24 +45,24 @@
 }
 
 .secondary:hover {
-
+    width: 197px;
+    height: 30px;
+    left: 574px;
+    background: #C9E5FF;
+    border-radius: 3px;
 }
 
 
 .default:active {
-
     width: 149px;
     height: 30px;
-    left: 574px;
     background: #0059B3;
     border-radius: 3px;
 }
 
 .secondary:active {
-
     width: 149px;
     height: 30px;
-    left: 574px;
     background: #C9E5FF;
     border: 1px solid #0066CC;
     border-radius: 3px;
@@ -84,19 +70,15 @@
 }
 
 .red:active {
-
     width: 149px;
     height: 30px;
-    left: 574px;
     background: #B31232;
     border-radius: 3px;
 }
 
 .button:disabled {
-
     width: 133px;
     height: 30px;
-    left: 574px;
     background: #004D99;
     border-radius: 3px
 }
