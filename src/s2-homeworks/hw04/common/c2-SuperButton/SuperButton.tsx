@@ -18,7 +18,7 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
     }
 ) => {
 
-    let finalStyle = `${s.button} ${className}`;
+    let finalStyle = `${s.button}`;
 
     const disStyle = disabled ? s.disabled : '';
 
