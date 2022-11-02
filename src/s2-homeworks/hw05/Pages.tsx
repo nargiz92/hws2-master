@@ -18,12 +18,18 @@ function Pages() {
             <Routes>
                 {/*роутинг будут писать студенты*/}
                 {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
-                {/*<Route ...*/}
+                {/*<Route path={'/'}  element={PATH.PRE_JUNIOR}/>*/}
+                <Route path={'/'} element={<Navigate to={PATH.PRE_JUNIOR}/>}/>
 
+                <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
                 {/*роуты для /pre-junior, /junior, /junior-plus*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
+                <Route path={'/'} element={<Navigate to={PATH.JUNIOR_PLUS}/>}/>
+
+                <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus/>}/>
+
+                <Route path={'/'} element={<Navigate to={PATH.JUNIOR}/>}/>
+
+                <Route path={PATH.JUNIOR} element={<Junior/>}/>
 
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
                 {/*<Route ...*/}
@@ -31,5 +37,9 @@ function Pages() {
         </div>
     )
 }
+// Для браузерных проектов есть BrowserRouter и HashRouter компоненты.
+//     BrowserRouter — следует использовать когда вы обрабатываете на сервере динамические запросы,
+//     а HashRouter используйте когда у вас статический веб сайт.Оба из них создадут специальный объект истории. Вы должны использовать BrowserRouter, если у вас есть сервер, который отвечает на запросы,
+//     и HashRouter, если вы используете статический файловый сервер типо GithubPages
 
 export default Pages
