@@ -10,6 +10,12 @@
 }
 
 .hwTitle {
-height: 144px;
+
+    width: 170px;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 22px;
 
 }

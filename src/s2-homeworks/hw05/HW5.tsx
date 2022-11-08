@@ -19,6 +19,6 @@ function HW5() {
         </HashRouter>
     )
 }
-// yarn i react-router-dom@6.2.1
+
 
 export default HW5
