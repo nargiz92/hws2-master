@@ -9,10 +9,10 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
         case 'sort': { // by name
 
             if (action.payload === 'up') {
-              return  [...state].sort((u1, u2) => u1.name.localeCompare(u2.name))
+                return [...state].sort((u1, u2) => u1.name.localeCompare(u2.name))
             }
             if (action.payload === 'down') {
-               return [...state].sort((u1, u2) => u2.name.localeCompare(u1.name))
+                return [...state].sort((u1, u2) => u2.name.localeCompare(u1.name))
             } else
                 return state // need to fix
         }
@@ -24,23 +24,4 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
             return state
     }
 }
-
-//
-// export const sortUpAC=('up':string,)=>{
-//     return{
-//         type:'sort',
-//         payloud:'up',''
-//
-//     }as const
-// }
-//
-//
-// export const check18AC=(payload:number)=>{
-//     return{
-//         type:'check',
-//         payloud:18
-//
-//     }as const
-// }
-//
 
