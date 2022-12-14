@@ -8,19 +8,20 @@ function Clock() {
     // for autotests // не менять // можно подсунуть в локалСторэдж нужную дату, чтоб увидеть как она отображается
     const [date, setDate] = useState<Date>(new Date(restoreState('hw9-date', Date.now())))
     const [show, setShow] = useState<boolean>(false)
-
+    // console.log('date',date)
     const start = () => {
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
         setShow(true)
         const id: number = window.setInterval(() => {
-            setDate(date)
+            setDate(new Date()) // +1
         }, 1000)
         setTimerId(id)
     }
 
     const stop = () => {
 setShow(false)
+
         clearTimeout(timerId)// пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
 
     }
